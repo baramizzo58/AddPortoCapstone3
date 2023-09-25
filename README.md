@@ -39,3 +39,44 @@ This dataset obtain from [Kaggle](https://www.kaggle.com/datasets/andrewmvd/feta
 ### **1. Data Understanding**
 #### a. Data Overview
 ![data overview](https://github.com/baramizzo58/AddPortoCapstone3/assets/119744134/55b4dd0a-715c-4e81-9ef1-914e51b5c290)
+
+#### b. Data Outlier
+![data outlier](https://github.com/baramizzo58/AddPortoCapstone3/assets/119744134/324345b2-8219-47ae-852b-68fd48d45378)
+
+#### c. Data Correlation
+![data correlation](https://github.com/baramizzo58/AddPortoCapstone3/assets/119744134/46f9acc2-54c9-40b8-bc8c-241ea3577ec8)
+
+### **2. Data Cleaning**
+Before oversampling
+![pie before](https://github.com/baramizzo58/AddPortoCapstone3/assets/119744134/db2e2618-ee8f-4eea-b195-accf14dfe10f)
+![bar before](https://github.com/baramizzo58/AddPortoCapstone3/assets/119744134/ceab71c3-65b3-4216-94d5-e5efa829cdd3)
+
+After oversampling
+![pie after](https://github.com/baramizzo58/AddPortoCapstone3/assets/119744134/ecaa2bf9-5e04-4c8c-8fde-ea16b7b853b3)
+![bar after](https://github.com/baramizzo58/AddPortoCapstone3/assets/119744134/493d38ab-f9f0-441d-a55c-b3f7359094ae)
+
+### **3. Data Modeling**
+1. Gradient Boosting Machine (GBM)
+2. K-nearest neighbors (KNN)
+3. Logistic Regression (LR)
+4. Random Forest (RF)
+5. Support Vector Machine (SVM)
+
+![image](https://github.com/baramizzo58/AddPortoCapstone3/assets/119744134/aa5c8ae6-2d9f-4a58-a22c-4be53eb4a636)
+
+#### Best Model: K-nearest neighbors (KNN)
+Learning Curve
+![knn learning curve](https://github.com/baramizzo58/AddPortoCapstone3/assets/119744134/e3b2b545-2b36-429b-9281-01aaab434b93)
+
+Confusion Metrics
+![knn confusion metrics](https://github.com/baramizzo58/AddPortoCapstone3/assets/119744134/a8dbee2c-9aa9-4edb-af7d-a2585cea0b5a)
+
+## **D. Conclusion & Recommendation**
+### **1. Conclusion**
+* This dataset is quite clean with no extreme & unreasonable outlier. This dataset also has no missing value found. But for the label (`fetal_health`) is not too good because of imbalance classification, where the dataset contain **77.85%** normal fetus label (1.0). This problem solved by do the oversampling.
+* The most correlated factor with fetal health is **Abnormal Fetal Heart Rate - FHR** (`prolongued_decelerations`) with value **0.48**. The other factor is **Abnormal Short & Long Term Variability** also have high correlation with the value **0.47** & **0.43**, respectively. Short Term Variability is the percentage of subsequent FHR signals differing less than 1 bpm (`abnormal_short_term_variability`). Abnormal Long Term Variability is the percentage of FHR signals with a difference between the minimum and maximum values in a 1 min window lower than 5 bpm (`percentage_of_time_with_abnormal_long_term_variability`). [Source](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8442730/).
+* The Best Model is **K-nearest neighbors** with training score **99.97%** & testing score **98.19%** with error **1.78%**. The model added, Support Vector Machine, has the most improved tuning model with improvement **5.5%**.
+
+### **2. Recommendation**
+* Building a model using feature selection to select column that only have high correlation with target
+* Hyperparameter tuning optimization can use [Optuna](https://optuna.org/) to improve model performance
