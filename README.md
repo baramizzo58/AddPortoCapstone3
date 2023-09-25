@@ -2,7 +2,7 @@
 
 Optimization of Bachelor Thesis Project that made by Universitas Sebelas Maret Student
 
-First Version: https://colab.research.google.com/drive/1I-JS_I4VoIu2qzuiicPNHzUY_mEbQcGY?usp=sharing
+First Version: https://colab.research.google.com/drive/1I-JS_I4VoIu2qzuiicPNHzUY_mEbQcGY?usp=sharing <br>
 Upgraded Version: https://colab.research.google.com/drive/1QZ5kg6A1UGQ0bWAKakgvKWclj1-PVi4n?usp=sharing
 
 ## **A. Business Problem Understanding**
