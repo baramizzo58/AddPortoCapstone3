@@ -62,7 +62,12 @@ This dataset obtain from [Kaggle](https://www.kaggle.com/datasets/andrewmvd/feta
 4. Random Forest (RF)
 5. Support Vector Machine (SVM)
 
-![image](https://github.com/baramizzo58/AddPortoCapstone3/assets/119744134/aa5c8ae6-2d9f-4a58-a22c-4be53eb4a636)
+#### Tuning Result
+![image](https://github.com/baramizzo58/AddPortoCapstone3/assets/119744134/3b42e60d-4075-472c-9090-6fe0931361ca)
+
+#### Modelling (Training vs Testing) Result
+![image](https://github.com/baramizzo58/AddPortoCapstone3/assets/119744134/d0af2208-9ff6-4352-826e-637338a39980)
+
 
 #### Best Model: K-nearest neighbors (KNN)
 ##### Learning Curve
