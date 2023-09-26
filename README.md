@@ -1,6 +1,6 @@
 # Fetal Health Classification
-
-Optimization of Bachelor Thesis Project that made by Universitas Sebelas Maret Student
+Additional Portofolio Capstone Project Modul 3 Purwadhika Job Connector Data Science Online Batch 9 (JCDSOL-09) - Noor Kharismawan Akbar.
+This project also made as an optimization of Bachelor Thesis Project that made by Universitas Sebelas Maret Student.
 
 First Version: https://colab.research.google.com/drive/1I-JS_I4VoIu2qzuiicPNHzUY_mEbQcGY?usp=sharing<br>
 Upgraded Version: https://colab.research.google.com/drive/1QZ5kg6A1UGQ0bWAKakgvKWclj1-PVi4n?usp=sharing
